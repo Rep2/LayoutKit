@@ -107,7 +107,7 @@ extension UITableView: ReloadableView {
         register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: reuseIdentifier)
     }
 
-    public func perform(batchUpdates: BatchUpdates) {
+    open func perform(batchUpdates: BatchUpdates) {
         beginUpdates()
 
         // Update items.
